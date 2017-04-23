@@ -1,11 +1,9 @@
-## lee-algorithm
+#include <iostream>
+#include <random>
+#include "../include/Lee.hpp"
 
-My implementation of Lee's algorithm. More information about this algorithm, you can found at  [Wiki](https://en.wikipedia.org/wiki/Lee_algorithm)
-
-## Code Example
-
-```C++
-const int dimension = 10;
+int main() {
+    const int dimension = 10;
     int matrix[dimension][dimension] = {
             {1, 1, 1, -1, 1, -1, 1, 1, -1, -1},
             {-1, 1, 1, 1, -1, 1, 1, -1, 1, 1},
@@ -64,8 +62,6 @@ const int dimension = 10;
         delete[] map[i];
     }
     delete[] map;
-```
 
-## License
-
-[The MIT License (MIT)](LICENSE.md)
+    return 0;
+}
