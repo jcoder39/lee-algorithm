@@ -9,6 +9,8 @@
 #include <string>
 #include "Lee.hpp"
 
+NAMESPACE_BEGIN
+
 class Cell
 {
 public:
@@ -79,5 +81,7 @@ private:
     std::vector<Cell*> _neighbors;
     std::string _code;
 };
+
+NAMESPACE_END
 
 #endif //LEE_CELL_HPP

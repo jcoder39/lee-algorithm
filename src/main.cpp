@@ -3,6 +3,8 @@
 #include "../include/Lee.hpp"
 
 int main() {
+    using namespace name::bvv::Lee;
+
     const int dimension = 10;
     int matrix[dimension][dimension] = {
             {1, 1, 1, -1, 1, -1, 1, 1, -1, -1},

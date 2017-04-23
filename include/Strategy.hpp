@@ -8,6 +8,8 @@
 #include <memory>
 #include <map>
 
+NAMESPACE_BEGIN
+
 struct Strategy {
     virtual ~Strategy(){};
     virtual void CreateRelations(const Size& border, std::map<std::string, std::shared_ptr<Cell>>& cells) = 0;
@@ -88,5 +90,7 @@ struct OrthogonalDiagonal : public Strategy {
         }
     }
 };
+
+NAMESPACE_END
 
 #endif //LEE_STRATEGY_HPP

@@ -5,8 +5,13 @@
 #ifndef LEE_LEE_HPP
 #define LEE_LEE_HPP
 
+#define NAMESPACE_BEGIN namespace name { namespace bvv { namespace Lee {
+#define NAMESPACE_END   } } }
+
 #include <string>
 #include "Settings.hpp"
+
+NAMESPACE_BEGIN
 
 static std::string getCode(int x, int y);
 
@@ -117,6 +122,8 @@ std::string getCodeForS(const Point& point){
 std::string getCodeForSW(const Point& point){
     return getCode(point._x - 1, point._y + 1);
 }
+
+NAMESPACE_END
 
 #include "Cell.hpp"
 #include "Strategy.hpp"

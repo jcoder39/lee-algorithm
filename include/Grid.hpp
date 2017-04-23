@@ -14,6 +14,8 @@
 #include <ctime>
 #include "Lee.hpp"
 
+NAMESPACE_BEGIN
+
 class Grid
 {
 public:
@@ -227,5 +229,7 @@ private:
     std::map<std::string, std::shared_ptr<Cell>> _cells;
     std::vector<Cell*> _cellsInWork;
 };
+
+NAMESPACE_END
 
 #endif //LEE_GRID_HPP
